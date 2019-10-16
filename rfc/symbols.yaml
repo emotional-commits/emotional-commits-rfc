@@ -1,0 +1,363 @@
+- unicode: 💥
+  code: breaking-change
+  parent:
+  title: Breaking
+  description: Use if the change breaks backward compatibility of public API in any way
+  semver_impact: major
+  alt_conventional_commits: BREAKING CHANGE
+  alt_gitmoji: boom
+- unicode: 🔨
+  code: build
+  parent:
+  title: Build tools
+  description:
+    Add or update code, libraries and configuration for support tools, build
+    process, scripts and task runner, testing framework, git related files.
+  semver_impact: patch
+  alt_conventional_commits: build
+  alt_gitmoji:
+- unicode: 🔧
+  code: config
+  parent: build
+  title: Configuration
+  description:
+    Add or update configuration of the project or support tools. Use for editing
+    configuration files.
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: wrench
+- unicode: 👷
+  code: ci
+  parent: config
+  title: CI
+  description: Add or update configuration or integration related to CI system
+  semver_impact:
+  alt_conventional_commits: ci
+  alt_gitmoji: construction_worker
+- unicode: 🚀
+  code: deploy
+  parent: config
+  title: Deployment
+  description:
+    Add or update configuration related to deploying project or its modules
+    (like API docs)
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: rocket
+- unicode: 🐚
+  code: script
+  parent: build
+  title: Script
+  description:
+    Add or update simple scripts (shell or any other scripting language) that
+    are not handled by a task runner
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji:
+- unicode: 🐙
+  code: task
+  parent: build
+  title: Task runner
+  description:
+    Add or update task runner's tasks or support utility for your tooling,
+    including compilation, code generation, linting, tests etc.
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji:
+- unicode: 📝
+  code: docs
+  parent:
+  title: Documentation
+  description:
+    Add or update readme, contributors, license, collaboration templates,
+    library meta information and source code documentation.
+  semver_impact: patch
+  alt_conventional_commits: docs
+  alt_gitmoji: pencil
+- unicode: ⚖️
+  code: legal
+  parent: docs
+  title: Legal
+  description:
+    Use for adding license, terms of use, authors, copyright information,
+    credits to authors and contributors etc.
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: page_facing_up
+- unicode: ℹ️
+  code: source-docs
+  parent: docs
+  title: Source documentation
+  description:
+    Update source code documentation (human readable or comment annotations).
+    Revision should be only focused on commenting existing source code, but if
+    it is convenient to add documentation with a feature, it is preferable to
+    creating a new revision in most cases.
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: bulb
+- unicode: ✨
+  code: feat
+  parent:
+  title: Feature
+  description:
+    Add a new feature no matter if its part of your public API or user
+    inaccessible
+  semver_impact: minor
+  alt_conventional_commits: feat
+  alt_gitmoji: sparkles
+- unicode: 🛑
+  code: acl
+  parent: feat
+  title: ACL
+  description: Add or update user authentication, authorization and ACL
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji:
+- unicode: 🎉
+  code: init
+  parent: feat
+  title: Initialize
+  description: First commit initializing the repository
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: tada
+- unicode: 🐘
+  code: state
+  parent: feat
+  title: State management
+  description:
+    Application state related changes either related to persistent (database,
+    file system, ...) or memory storage (cache, global application state, ...),
+    including state management and related components.
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: card_file_box
+- unicode: 🧸
+  code: model
+  parent: state
+  title: Model
+  description: Add or update entity models
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji:
+- unicode: 💽
+  code: persistent
+  parent: state
+  title: Persistent storage
+  description:
+    Persistent memory management, typically database related changes like
+    connection, data serialization etc.
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji:
+- unicode: 💬
+  code: text
+  parent: feat
+  title: Texts
+  description:
+    Add or make changes to texts related to applications public API, typically
+    UI elements.
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: speech_balloon
+- unicode: 🌐
+  code: i18n
+  parent: text
+  title: Internationalization
+  description: Add or update internationalization of the project related to public API
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: globe_with_meridians
+- unicode: 💄
+  code: ui
+  parent: feat
+  title: UI
+  description: Add, update or enhance application's UI
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: lipstick
+- unicode: 🐛
+  code: fix
+  parent:
+  title: Fix
+  description:
+    Fix undesirable behavior that conflicts with a defined contract (updating
+    behavior that has been undefined prior to fixing is not a bug fix)
+  semver_impact: patch
+  alt_conventional_commits: fix
+  alt_gitmoji: bug
+- unicode: 🔒
+  code: security
+  parent: fix
+  title: Fix security
+  description:
+    Fix system's issues related to security or make system more robust in this
+    manner
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: lock
+- unicode: 🔤
+  code: typo
+  parent: fix
+  title: Fix typos
+  description:
+    Fix all typos, misspelled words, trivial copy-paste errors anywhere in the
+    source, including variable names, file namse or translation tables
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: pencil2
+- unicode: ⚡
+  code: perf
+  parent:
+  title: Improve performance
+  description: Improve the application performance in ways of speed, memory or usability
+  semver_impact: patch
+  alt_conventional_commits: perf
+  alt_gitmoji: zap
+- unicode: 🐠
+  code: perf-memory
+  parent: perf
+  title: Memory performance
+  description: Improve performance with regard to memory resources
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji:
+- unicode: 🌿
+  code: perf-resources
+  parent: perf
+  title: Save resources
+  description:
+    Improve performance or reduce usage of tasks that do not have primarily
+    direct impact on performance of the application, but save available
+    resources (optimize observers, debounce API calls, delay crawler, ...)
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji:
+- unicode: 🏇
+  code: perf-speed
+  parent: perf
+  title: Speed performance
+  description: Improve speed performance
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji:
+- unicode: ♻️
+  code: refactor
+  parent:
+  title: Refactor
+  description:
+    Introduce changes that are related to you program files (not 🔨), don't add
+    a new feature and don't fix a bug. Use for refactoring, changing internal
+    functions etc. Change code without affecting its public API functionality.
+  semver_impact: patch
+  alt_conventional_commits: refactor
+  alt_gitmoji: recycle
+- unicode: 📌
+  code: dependency-pin
+  parent: refactor
+  title: Pin a dependency
+  description: Save a specific version of a remote dependency
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: pushpin
+- unicode: ➕
+  code: dependency-add
+  parent: dependency-pin
+  title: Add a dependency
+  description: Add a new external dependency
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: heavy_plus_sign
+- unicode: ⬇️
+  code: dependency-down
+  parent: dependency-pin
+  title: Downgrade a dependency
+  description:
+    Downgrade an external dependency to an older version that was required prior
+    to this commit
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: arrow_down
+- unicode: ⬆️
+  code: dependency-up
+  parent: dependency-pin
+  title: Upgrade a dependency
+  description:
+    Upgrade an external dependency to a newer version that was required prior to
+    this commit
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: arrow_up
+- unicode: 🌈
+  code: format
+  parent: refactor
+  title: Format
+  description:
+    Fix code formatting, violations of coding style or remove trivial code
+    smells.
+  semver_impact:
+  alt_conventional_commits: style
+  alt_gitmoji: rotating_light
+- unicode: 🔠
+  code: naming
+  parent: refactor
+  title: Naming
+  description:
+    Rename existing variables, functions, components, modules. Anything that had
+    been given a poor name in the past and it is related to internal naming.
+  semver_impact:
+  alt_conventional_commits: refactor
+  alt_gitmoji: recycle
+- unicode: 🔖
+  code: release
+  parent: refactor
+  title: Release
+  description:
+    Create a tagged release with version bumps and generated code related to the
+    version change (changelog generation etc.)
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: bookmark
+- unicode: 🔥
+  code: remove
+  parent: refactor
+  title: Remove
+  description: Remove deprecated, dead, unused or obsolete code
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: fire
+- unicode: ➖
+  code: dependency-remove
+  parent: remove
+  title: Remove a dependency
+  description: Remove external dependency
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: heavy_minus_sign
+- unicode: ✅
+  code: test
+  parent:
+  title: Test
+  description:
+    Add or update automated tests including minor fixes of developed features.
+    This includes adding failing tests in TDD.
+  semver_impact: patch
+  alt_conventional_commits: test
+  alt_gitmoji: white_check_mark
+- unicode: 🤡
+  code: mock
+  parent: test
+  title: Mock
+  description: Add mock files for testing purposes
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: clown_face
+- unicode: 📸
+  code: snapshot
+  parent: test
+  title: Snapshot
+  description: Add or update snapshots from snapshot testing
+  semver_impact:
+  alt_conventional_commits:
+  alt_gitmoji: camera_flash
